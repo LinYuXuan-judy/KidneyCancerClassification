@@ -5,11 +5,11 @@ We used CT images and masks of renal tumors to extract radiomics features, and t
 
 CT image
 <figure >
-    <img src="./img/picture2.png" width="130"/>
+    <img src="./img/picture2.png" width="200"/>
 </figure >
 Mask
 <figure>
-    <img src="./img/picture3.png" width="132"/>
+    <img src="./img/picture3.png" width="202"/>
 </figure >
 
 The flow as shown below.
