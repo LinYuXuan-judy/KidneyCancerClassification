@@ -1,4 +1,22 @@
 # RCC: CT Image Classification
+## Introduction
+
+We used CT images and masks of renal tumors to extract radiomics features, and then used a random forest classification model to classify tumors as benign or malignant.
+
+CT image
+<figure >
+    <img src="./img/picture2.png" width="130"/>
+</figure >
+Mask
+<figure>
+    <img src="./img/picture3.png" width="132"/>
+</figure >
+
+The flow as shown below.
+![flow](./img/picture1.png)
+
+The picture source: https://zhuanlan.zhihu.com/p/108152793
+
 
 # Installation python package
 [Pyradiomics](https://pyradiomics.readthedocs.io/en/latest/) needs to be installed before using this classification model. 
