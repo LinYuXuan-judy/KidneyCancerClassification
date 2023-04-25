@@ -26,9 +26,9 @@ The picture source: https://zhuanlan.zhihu.com/p/108152793
     ```
 * We calculate radiomics feature using three different filiters(original, wavelet and LoG). Finally, a total of 1316 features will be obtained.
 
-* After comparing different radiomics features we finally use 3D shape-based feature(14 features) because it is the best based on the f1-score of the vghtc 5-fold experiment.
+* After comparing different radiomics features, we finally use 3D shape-based feature(14 features) to train our classification model because it is the best based on the f1-score of the vghtc 5-fold experiment.
 # Usage
-We provide some [sample cases](./samplecase/) to familiarize you with this classification model before using your own dataset. 
+We provide some [sample cases](./samplecase/) from TCGA to familiarize you with this classification model before using your own dataset. 
 
 ## 1. Clone repository
 You need to clone our repository and then enter the folder named KidneyCancerClassification.
@@ -52,6 +52,7 @@ featureResult
 ```
 
 If you want to use your own dataset, you need to provide two floders, one with all CT images, the other with all mask files of CT images. Then they need to be arranged into a specific structure, as shown below. 
+
 * You need to notice that the **names** of the same case images and masks need to be the **same** and the **data types** of images and masks need to be **nii.gz** files.
 ```
 samplecase
