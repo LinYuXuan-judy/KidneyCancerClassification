@@ -25,6 +25,8 @@ The picture source: https://zhuanlan.zhihu.com/p/108152793
     python -m pip install pyradiomics
     ```
 * We calculate radiomics feature using three different filiters(original, wavelet and LoG). Finally, a total of 1316 features will be obtained.
+
+* After comparing different radiomics features we finally use 3D shape-based feature(14 features) because it is the best based on the f1-score of the vghtc 5-fold experiment.
 # Usage
 We provide some [sample cases](./samplecase/) to familiarize you with this classification model before using your own dataset. 
 
