@@ -56,6 +56,9 @@ for c in case_list:
 
 # output feature
 df = pd.DataFrame(records)
+outputPath = os.path.join(cwd, 'featureResult')
+if not os.path.isdir(outputPath):
+    os.mkdir(outputPath)
 df.to_csv(os.path.join(cwd, 'featureResult', 'feature.csv'))
 df.to_pickle(os.path.join(cwd, 'featureResult', 'feature.pkl'))
 print("Failed case", failed_case)

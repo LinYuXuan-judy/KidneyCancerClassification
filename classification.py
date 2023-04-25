@@ -118,4 +118,7 @@ for j in [0]:
 
 out_df = {'case_name': case_list, 'predict_proba': predictProba}
 out_df = pd.DataFrame(out_df)
+outputPath = os.path.join(cwd, 'classificationResult')
+if not os.path.isdir(outputPath):
+    os.mkdir(outputPath)
 out_df.to_csv(os.path.join(cwd, 'classificationResult', 'classificationResult.csv'))
