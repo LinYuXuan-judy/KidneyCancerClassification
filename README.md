@@ -95,3 +95,26 @@ Example:
 | case_00000| 0.561589      |
 | case_00001| 0.231569      |
 | case_00002| 0.895616      |
+
+## 4. Classification - low grade vs. high grade
+You need to run [classification_lh.py](./classification_lh.py) with the following command to classify tumors as low grade or high grade. 
+
+```
+python3 classification_lh.py
+```
+
+The result of classification will be stored in a folder named classificationResult. 
+```
+classificationResult
+└── classificationResult_lh.csv
+```
+
+We store the results in high grade predict_proba type. 
+
+Example: 
+
+| case_name | predict_proba |
+| --------- | :-----------: |
+| case_00000| 0.561589      |
+| case_00001| 0.231569      |
+| case_00002| 0.895616      |
